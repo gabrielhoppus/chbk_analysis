@@ -1,10 +1,24 @@
 # Chargeback Analysis
 
+This project uses Python and Pandas to analyze around 3200 transactions
+and draw conclusions that could determine fraudulent behavior in 
+purchases that present chargeback claims.
 
 ## Installation
 
+This app was created using Python 3.10.2
+
+1. Clone this repository
+2. Install all dependencies
+
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
+```
+
+3. Run the script
+
+```bash
+python main.py
 ```
 
 ## Contributing

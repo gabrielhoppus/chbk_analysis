@@ -1,7 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv('data.csv')
 
+df = pd.read_csv('data.csv')
 df['transaction_date'] = pd.to_datetime(df['transaction_date'])
 
 def hasChargeback():
@@ -131,11 +131,3 @@ def specificDeviceTransactions():
     print(result_cbk.to_string())
     print(mean_cbk)
     print(card_cbk)
-
-specificDeviceTransactions()
-
-#checar se tem muitas transações de um usuário em pouco tempo
-#checar se um mesmo usuário tem muitos chargebacks
-#checar se o mesmo user_id tem muitas tentativas no mesmo device_id
-#checar se existe uma data especifica para multiplos chargebacks
-
